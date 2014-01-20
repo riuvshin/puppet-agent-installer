@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# bash <(curl -s https://raw.github.com/riuvshin/puppet_wars/master/install_puppet.sh)
+# bash <(curl -s https://raw.github.com/riuvshin/puppet-agent-installer/master/install_puppet.sh) <your_dns>
 
 certname=$1
 
