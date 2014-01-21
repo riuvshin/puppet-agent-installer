@@ -21,7 +21,7 @@ sudo sed -i "/\[agent\]/ a\    certname = $certname" /etc/puppet/puppet.conf
 sudo sed -i "/\[agent\]/ a\    default_schedules = false" /etc/puppet/puppet.conf
 sudo sed -i "/\[agent\]/ a\    report = true" /etc/puppet/puppet.conf
 sudo sed -i "/\[agent\]/ a\    pluginsync = true" /etc/puppet/puppet.conf
-sudo sed -i "/\[agent\]/ a\    environment = development" /etc/puppet/puppet.conf
+sudo sed -i "/\[agent\]/ a\    environment = production" /etc/puppet/puppet.conf
 
 # adding hosts rule, only for test
 #ip=`ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}'`
