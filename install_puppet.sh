@@ -11,7 +11,7 @@ echo
 sudo rpm -ivh http://yum.puppetlabs.com/el/6/products/x86_64/puppetlabs-release-6-7.noarch.rpm
 
 echo "installing puppet agent..."
-sudo yum install puppet-3.4.2-1.el6.noarch -y
+sudo yum install puppet-3.4.3-1.el6.noarch -y
 
 echo "configuring puppet agent..."
 sudo sed -i "/\[agent\]/ i\    server = puppet-master.codenvycorp.com" /etc/puppet/puppet.conf
