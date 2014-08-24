@@ -15,7 +15,7 @@ sudo yum install puppet-3.4.3-1.el6.noarch -y
 
 echo "configuring puppet agent..."
 sudo sed -i "/\[agent\]/ i\    server = puppet-master.codenvycorp.com" /etc/puppet/puppet.conf
-sudo sed -i "/\[agent\]/ i\    runinterval = 180" /etc/puppet/puppet.conf
+sudo sed -i "/\[agent\]/ i\    runinterval = 420" /etc/puppet/puppet.conf
 sudo sed -i "/\[agent\]/ i\    configtimeout = 600" /etc/puppet/puppet.conf
 sudo sed -i "/\[agent\]/ a\    certname = $certname" /etc/puppet/puppet.conf
 sudo sed -i "/\[agent\]/ a\    default_schedules = false" /etc/puppet/puppet.conf
